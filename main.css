@@ -1,0 +1,243 @@
+body {
+    background-color: #399dd3;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 130px;
+    width: 230px;
+    height: 250px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: -30px;
+    text-align: center;
+    color: white;
+    font-family: Helvetica;
+    height: 50px;
+}
+
+h2 {
+    position: relative;
+    top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    font-family: Trebuchet MS;
+    color: gray;
+    font-weight: normal;
+}
+
+.textbox {
+    display: block;
+    text-align: center;
+    position: relative;
+    height: 100px;
+    
+}
+
+.loginbutton {
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+.buttontop {
+    margin: 130px;
+    color: white;
+    text-decoration: none;
+    font-family: Helvetica;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.clock {
+    font-family: Helvetica;
+    text-align: center;
+    display: block;
+    text-align: center;
+    position: relative;
+    color: white;
+    font-size: 70px;
+    margin-top: 80px;
+    border: 8px white solid;
+    border-radius: 20px;
+    margin-left: 600px;
+    margin-right: 600px;
+}
+
+.cadre{
+    display: block;
+    text-align: center;
+    position: relative;
+    width:auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 590px;
+    background:#FFFFFF;
+    border-top-left-radius : 20px 20px;
+    border-top-right-radius : 20px 20px;
+    border-bottom-left-radius : 20px 20px;
+    border-bottom-right-radius : 20px 20px;
+    margin-top: 50px;    
+}
+
+.cadrefonction{
+    display: block;
+    position: relative;
+    width:auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 590px;
+    background:#FFFFFF;
+    border-top-left-radius : 20px 20px;
+    border-top-right-radius : 20px 20px;
+    border-bottom-left-radius : 20px 20px;
+    border-bottom-right-radius : 20px 20px;
+    margin-top: 2px;    
+    overflow: scroll;
+}
+
+.onglettopON {
+    height: 150px;
+    background:#f4b342;
+    margin-top: 5px;
+    border-top-left-radius : 6px;
+    border-top-right-radius : 6px;
+    border-bottom-left-radius : 6px;
+    border-bottom-right-radius : 6px;
+}
+
+.navbar { 
+    text-align: center;
+    margin: 100px;
+    color: white;
+    text-decoration: none;
+    font-family: Helvetica;
+    font-size: 25px;
+    margin-top: 180px;
+    margin-bottom: 15px;
+}
+
+
+.text1 {
+    position: relative;
+    top: 150px;
+    margin-left: 150px;
+    margin-right: auto;
+    font-size: 35px;
+    font-family: Trebuchet MS;
+    color: black;
+    font-weight: normal;
+}
+
+ul.ul-releve {
+    margin: 0 auto !important;
+    width: 700px;
+}
+
+ul.ul-releve li {
+    position: relative;
+    font-size: 35px;
+    font-family: Trebuchet MS;
+    text-align: center;
+    background: url('../images/icons/temp-h-60.png') no-repeat left;
+    padding-left: 50px;
+    list-style-type: none;
+    line-height: 120px;
+    margin-bottom: 50px;
+}
+
+ul.ul-releve li span.val {
+   border:1px solid black;
+}
+
+.temp {
+    float: left;
+    height: 130px;
+    width: 180px;
+    margin: -50px;
+    margin-left: 150px;
+}
+
+.carré2 {
+   float: right;
+   border:3px solid black;
+   width:150px;
+   height:50px;
+   margin-top: 70px;
+   margin-right: 450px;
+   text-align: center;
+   font-size: 40px;
+   font-family: Trebuchet MS;
+   
+}
+
+.ongletbotON {
+    height: 150px;
+    background:#f4b342;
+    margin-top: 5px;
+    border-top-left-radius : 6px;
+    border-top-right-radius : 6px;
+    border-bottom-left-radius : 6px;
+    border-bottom-right-radius : 6px;
+}
+
+.tableaubackground {
+    display: block;
+    text-align: center;
+    width:auto;
+    margin-left: 150px;
+    margin-right: 150px;
+    height: 500px;
+    background:#ddd3c9;
+}
+
+.texttableau {
+    background:#ffffff;
+    font-size: 20px;
+    font-family: Trebuchet MS;
+    font-weight: bold;
+}
+
+table.table-releves {
+    width: 90%;
+    margin: 10px auto;
+    border: solid 1px #999;
+    overflow: auto;
+}
+
+table.table-releves td {
+    border: solid 1px #999;
+    font-size: 20px; 
+    color: black;
+    padding: 5px 10px;
+}
+
+table.table-releves th.col-1,
+table.table-releves td.col-1 {
+    text-align: left;
+    min-width: 300px;
+}
+
+table.table-releves th.col-2,
+table.table-releves td.col-2,
+table.table-releves th.col-3,
+table.table-releves td.col-3 {
+    max-width: 300px;
+    text-align: center !important;
+    white-space: nowrap;
+}
+
+.select_air {
+    text-align: center;
+    font-size: 50px;
+    font-family: Trebuchet MS;
+}
+
+#choix_temp {
+    font-size: 20px;
+}
