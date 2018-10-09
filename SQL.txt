@@ -1,0 +1,86 @@
+#------------------------------------------------------------
+#        Script MySQL.
+#------------------------------------------------------------
+
+
+#------------------------------------------------------------
+# Table: capteurs
+#------------------------------------------------------------
+
+CREATE TABLE capteurs(
+        id_capteur   int (11) Auto_increment  NOT NULL ,
+        nom          Varchar (25) ,
+        unite_mesure Varchar (25) ,
+        PRIMARY KEY (id_capteur )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: releves_capteurs
+#------------------------------------------------------------
+
+CREATE TABLE releves_capteurs(
+        id_releve_C  int (11) Auto_increment  NOT NULL ,
+        nom          Varchar (25) ,
+        valeurs      Float ,
+        heure_releve Time ,
+        date_releve  Date ,
+        id_capteur   Int ,
+        PRIMARY KEY (id_releve_C )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: consigne_temperature
+#------------------------------------------------------------
+
+CREATE TABLE consigne_temperature(
+        id_emetteur_T int (11) Auto_increment  NOT NULL ,
+        temperature   Float ,
+        dateheure     Datetime ,
+        PRIMARY KEY (id_emetteur_T )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: consigne_eau
+#------------------------------------------------------------
+
+CREATE TABLE consigne_eau(
+        id_emetteur_E int (11) Auto_increment  NOT NULL ,
+        temperature   Float ,
+        dateheure     Datetime ,
+        PRIMARY KEY (id_emetteur_E )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: releves_alarmes
+#------------------------------------------------------------
+
+CREATE TABLE releves_alarmes(
+        id_releves_A int (11) Auto_increment  NOT NULL ,
+        nom          Varchar (25) ,
+        valeurs      Float ,
+        heure_releve Time ,
+        date_releve  Date ,
+        id_capteur   Int ,
+        PRIMARY KEY (id_releves_A )
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: membres
+#------------------------------------------------------------
+
+CREATE TABLE membres(
+        id              int (11) Auto_increment  NOT NULL ,
+        pseudo          Varchar (255) ,
+        pass            Varchar (255) ,
+        email           Varchar (255) ,
+        date_inscripion Date ,
+        PRIMARY KEY (id )
+)ENGINE=InnoDB;
+
+ALTER TABLE releves_capteurs ADD CONSTRAINT FK_releves_capteurs_id_capteur FOREIGN KEY (id_capteur) REFERENCES capteurs(id_capteur);
+ALTER TABLE releves_alarmes ADD CONSTRAINT FK_releves_alarmes_id_capteur FOREIGN KEY (id_capteur) REFERENCES capteurs(id_capteur);
